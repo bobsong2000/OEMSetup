@@ -26,8 +26,8 @@ if exist "%ProgramW6432%\WinRAR\rar.exe" goto :INSTALL_INPUT
 echo.
 echo ======安装WinRAR======
 for  %%i in (%~dp0WINRAR\WinRAR*%myBit%*.exe) do (set myRAR=%%i)
-echo 安装myRAR...
-start /wait myRAR /s
+echo 安装%myRAR%...
+start /wait %myRAR% /s
 
 :INSTALL_INPUT
 echo.
@@ -54,7 +54,7 @@ rem   ======网络安装其他软件======
 set /P InstOther= 是否联网安装其他常用软件[Y(default)/N]?
 if /I "%InstOther%"=="N"  goto :END
 
-rem    ***根据需要修改
+rem    ***网络安装源，请根据需要修改
 set IntSource=
 set OutSource=
 
