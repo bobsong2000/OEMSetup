@@ -50,12 +50,12 @@ rem explorer.exe "http://www.baidu.com/"
 
 :NETINSTALL
 echo.
-rem   ======网络安装其他常用软件======
-set /P InstOther= 是否联网其他常用软件[Y(default)/N]?
+rem   ======网络安装其他软件======
+set /P InstOther= 是否联网安装其他常用软件[Y(default)/N]?
 if /I "%InstOther%"=="N"  goto :END
 
 rem    ***根据需要修改
-set IntSource=ftp://tzfzc:8714065@10.67.8.222/Public/ProgramGreen
+set IntSource=
 set OutSource=
 
 echo.
