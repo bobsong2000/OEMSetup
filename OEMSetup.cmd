@@ -45,7 +45,7 @@ rem xcopy e:\*.* d: /s /h /c /y
 
 echo.
 echo ======显示说明文件======
-rem explorer.exe "http://www.baidu.com/"
+explorer.exe "https://github.com/bobsong2000/OEMSetup/blob/master/README.md"
 
 
 :NETINSTALL
